@@ -21,7 +21,12 @@ enum Route {
     //TODO: assemble later with Router
     var view: any View {
         switch self {
-        case .currencySelection: return CurrencySelectionView() //TODO: assemble later with Router
+        case .currencySelection:
+            return CurrencySelectionRouter.assemble(
+                NetworkingManager: DIStore.networkingManager,
+                persistenceManger: DIStore.persistenceManager
+            )
+            
         case .confirmTranscation: return ConfirmationTransactionView()
         }
     }
