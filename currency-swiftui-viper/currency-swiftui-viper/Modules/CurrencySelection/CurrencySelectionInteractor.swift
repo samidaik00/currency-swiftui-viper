@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+public class CurrencySelectionInteractor {
+    let networkingManager: NetworkingManager
+    let persistenceManger: PersistenceManager
+    
+    init(networkingManager: NetworkingManager, persistenceManger: PersistenceManager) {
+        self.networkingManager = networkingManager
+        self.persistenceManger = persistenceManger
+    }
+}

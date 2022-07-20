@@ -10,7 +10,21 @@ import SwiftUI
 
 public struct CurrencySelectionView: View {
     
+    @StateObject var presenter: CurrencySelectionPresenter
+    
+    init(presenter: CurrencySelectionPresenter) {
+        _presenter = StateObject(wrappedValue: presenter)
+    }
+    
     public var body: some View {
-        Text("Currency Selection")
+        NavigationView {
+            VStack {
+                Text("Currency Selection")
+                
+                presenter.showConfirmation {
+                    Text("Route to confirm Screen")
+                }
+            }
+        }
     }
 }

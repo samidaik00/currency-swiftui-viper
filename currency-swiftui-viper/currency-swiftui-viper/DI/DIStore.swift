@@ -11,6 +11,6 @@ import Foundation
 /// Simple Struct to hold properties we would like to have injected through Dependency Injection such as Resolver for Swift
 ///
 struct DIStore {
-    static let networkManager: NetworkingManager = NetworkingManager()
+    static let networkingManager: NetworkingManager = NetworkingManager()
     static let persistenceManager: PersistenceManager = PersistenceManager()
 }
