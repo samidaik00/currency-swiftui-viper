@@ -7,6 +7,8 @@
 
 import Foundation
 
-public final class NetworkingManager {
-    
+public final class NetworkingManager: HTTPClient {
+    func getExchangeRates(baseCcy: String) async -> Result<ExchangeRateResponse, RequestError> {
+        return await sendRequest(endpoint: ExchangeRateEndpoint.latest(baseCcy: baseCcy), responseModel: ExchangeRateResponse.self)
+    }
 }
