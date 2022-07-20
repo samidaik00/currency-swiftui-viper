@@ -17,6 +17,10 @@ public class CurrencySelectionPresenter: ObservableObject {
         self.interactor = interactor
     }
     
+    func onAppear() async {
+        await interactor.getExchangeRates()
+    }
+    
     func showConfirmation<Content: View>(@ViewBuilder content: ()-> Content) -> some View {
         NavigationLink(destination: router.routeToConfirmation()) {
             content()

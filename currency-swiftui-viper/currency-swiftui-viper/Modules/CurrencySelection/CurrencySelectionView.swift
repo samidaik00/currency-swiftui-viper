@@ -26,5 +26,11 @@ public struct CurrencySelectionView: View {
                 }
             }
         }
+        .onAppear {
+            Task(priority: .background) {
+                await presenter.onAppear()
+            }
+            
+        }
     }
 }

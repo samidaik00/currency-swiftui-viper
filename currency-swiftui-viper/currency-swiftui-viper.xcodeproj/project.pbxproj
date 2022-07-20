@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4475EA5928885E9900D1EA76 /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4475EA5828885E9900D1EA76 /* EndpointType.swift */; };
+		4475EA5C28885FB600D1EA76 /* ExchangeRateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4475EA5B28885FB600D1EA76 /* ExchangeRateResponse.swift */; };
+		4475EA5F288861F400D1EA76 /* ExchangeRateEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4475EA5E288861F400D1EA76 /* ExchangeRateEndpoint.swift */; };
+		4475EA61288863AD00D1EA76 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4475EA60288863AD00D1EA76 /* HTTPClient.swift */; };
 		44DE919228884CA500160881 /* currency_swiftui_viperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE919128884CA500160881 /* currency_swiftui_viperApp.swift */; };
 		44DE919428884CA500160881 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE919328884CA500160881 /* ContentView.swift */; };
 		44DE919628884CA500160881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44DE919528884CA500160881 /* Assets.xcassets */; };
@@ -48,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4475EA5828885E9900D1EA76 /* EndpointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
+		4475EA5B28885FB600D1EA76 /* ExchangeRateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateResponse.swift; sourceTree = "<group>"; };
+		4475EA5E288861F400D1EA76 /* ExchangeRateEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateEndpoint.swift; sourceTree = "<group>"; };
+		4475EA60288863AD00D1EA76 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		44DE918E28884CA500160881 /* currency-swiftui-viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "currency-swiftui-viper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44DE919128884CA500160881 /* currency_swiftui_viperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currency_swiftui_viperApp.swift; sourceTree = "<group>"; };
 		44DE919328884CA500160881 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +107,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4475EA5A28885F9D00D1EA76 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				4475EA5B28885FB600D1EA76 /* ExchangeRateResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		4475EA5D2888619700D1EA76 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				4475EA5E288861F400D1EA76 /* ExchangeRateEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
 		44DE918528884CA500160881 = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +215,10 @@
 			isa = PBXGroup;
 			children = (
 				44DE91C428884F0F00160881 /* NetworkingManager.swift */,
+				4475EA5828885E9900D1EA76 /* EndpointType.swift */,
+				4475EA60288863AD00D1EA76 /* HTTPClient.swift */,
+				4475EA5D2888619700D1EA76 /* Endpoints */,
+				4475EA5A28885F9D00D1EA76 /* Responses */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -376,12 +404,16 @@
 				44DE919428884CA500160881 /* ContentView.swift in Sources */,
 				44DE91D22888510500160881 /* CurrencySelectionInteractor.swift in Sources */,
 				44DE91CE288850E800160881 /* CurrencySelectionRouter.swift in Sources */,
+				4475EA5F288861F400D1EA76 /* ExchangeRateEndpoint.swift in Sources */,
+				4475EA61288863AD00D1EA76 /* HTTPClient.swift in Sources */,
 				44DE91DD288851D300160881 /* ConfirmTransactionInteractor.swift in Sources */,
 				44DE91DF288851DA00160881 /* ConfirmTransactionView.swift in Sources */,
 				44DE91C328884E6900160881 /* Persistable.swift in Sources */,
 				44DE91C528884F0F00160881 /* NetworkingManager.swift in Sources */,
 				44DE91D0288850F800160881 /* CurrencySelectionPresenter.swift in Sources */,
 				44DE91DB288851CC00160881 /* ConfirmTransactionPresenter.swift in Sources */,
+				4475EA5C28885FB600D1EA76 /* ExchangeRateResponse.swift in Sources */,
+				4475EA5928885E9900D1EA76 /* EndpointType.swift in Sources */,
 				44DE91D42888517900160881 /* CurrencySelectionView.swift in Sources */,
 				44DE91D9288851C300160881 /* ConfirmTransactionRouter.swift in Sources */,
 				44DE91C82888500A00160881 /* DIStore.swift in Sources */,

@@ -15,4 +15,9 @@ public class CurrencySelectionInteractor {
         self.networkingManager = networkingManager
         self.persistenceManger = persistenceManger
     }
+    
+    func getExchangeRates() async {
+        let response = await networkingManager.getExchangeRates(baseCcy: "USD")
+        print(response)
+    }
 }
