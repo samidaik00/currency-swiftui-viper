@@ -13,9 +13,9 @@ public class CurrencySelectionPresenter: ObservableObject {
     let interactor: CurrencySelectionInteractor
     
     @Published var currencies: [String] = []
-    @Published var selectedBaseCurrency: String
-    @Published var selectedCurrency: String
-    @Published var amount: String
+    @Published var selectedBaseCurrency: String?
+    @Published var selectedCurrency: String?
+    @Published var amount: String?
     
     init(router: CurrencySelectionRouter, interactor: CurrencySelectionInteractor) {
         self.router = router
@@ -26,6 +26,9 @@ public class CurrencySelectionPresenter: ObservableObject {
     func onAppear() async {
         do {
             currencies = try await interactor.getExchangeRates().map { $0.code }
+            guard currencies.count > 2 else { return }
+            selectedBaseCurrency = currencies[0]
+            selectedCurrency = currencies[1]
         } catch {
             currencies = []
         }

@@ -19,8 +19,11 @@ public struct CurrencySelectionView: View {
     public var body: some View {
         NavigationView {
             VStack {
-                Picker("", selection: $selectedColor) {
-                    ForEach(presenter.currencies, id: \.self) { Text($0) }
+                
+                HStack {
+                    baseCurrencyPickerView
+                    exchangeIcon
+                    targetCurrencyPickerView
                 }
                 
                 Text("Currency Selection")
@@ -35,6 +38,40 @@ public struct CurrencySelectionView: View {
                 await presenter.onAppear()
             }
             
+        }
+    }
+    
+    private var baseCurrencyPickerView: some View {
+        HStack {
+            Text(presenter.selectedBaseCurrency ?? "-")
+                .font(.largeTitle)
+            
+            Picker("", selection: $presenter.selectedBaseCurrency) {
+                ForEach(presenter.currencies, id: \.self) { Text($0) }
+            }
+            
+        }
+        .padding()
+        .border(.green)
+    }
+    
+    private var targetCurrencyPickerView: some View {
+        HStack {
+            Text(presenter.selectedCurrency ?? "-")
+                .font(.largeTitle)
+            
+            Picker("", selection: $presenter.selectedCurrency) {
+                ForEach(presenter.currencies, id: \.self) { Text($0) }
+            }
+        }
+        .padding()
+        .border(.green)
+    }
+    
+    private var exchangeIcon: some View {
+        VStack {
+            Image(systemName: "arrow.forward")
+            Image(systemName: "arrow.backward")
         }
     }
 }
