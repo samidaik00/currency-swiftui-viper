@@ -1,0 +1,716 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44DE919228884CA500160881 /* currency_swiftui_viperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE919128884CA500160881 /* currency_swiftui_viperApp.swift */; };
+		44DE919428884CA500160881 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE919328884CA500160881 /* ContentView.swift */; };
+		44DE919628884CA500160881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44DE919528884CA500160881 /* Assets.xcassets */; };
+		44DE919928884CA500160881 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44DE919828884CA500160881 /* Preview Assets.xcassets */; };
+		44DE91A328884CA500160881 /* currency_swiftui_viperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE91A228884CA500160881 /* currency_swiftui_viperTests.swift */; };
+		44DE91AD28884CA500160881 /* currency_swiftui_viperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE91AC28884CA500160881 /* currency_swiftui_viperUITests.swift */; };
+		44DE91AF28884CA500160881 /* currency_swiftui_viperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE91AE28884CA500160881 /* currency_swiftui_viperUITestsLaunchTests.swift */; };
+		44DE91C128884E4400160881 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE91C028884E4400160881 /* PersistenceManager.swift */; };
+		44DE91C328884E6900160881 /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE91C228884E6900160881 /* Persistable.swift */; };
+		44DE91C528884F0F00160881 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE91C428884F0F00160881 /* NetworkingManager.swift */; };
+		44DE91C82888500A00160881 /* DIStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE91C72888500A00160881 /* DIStore.swift */; };
+		44DE91CB288850B100160881 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE91CA288850B100160881 /* Route.swift */; };
+		44DE91CE288850E800160881 /* CurrencySelectionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE91CD288850E800160881 /* CurrencySelectionRouter.swift */; };
+		44DE91D0288850F800160881 /* CurrencySelectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE91CF288850F800160881 /* CurrencySelectionPresenter.swift */; };
+		44DE91D22888510500160881 /* CurrencySelectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE91D12888510500160881 /* CurrencySelectionInteractor.swift */; };
+		44DE91D42888517900160881 /* CurrencySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE91D32888517900160881 /* CurrencySelectionView.swift */; };
+		44DE91D72888519500160881 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE91D62888519500160881 /* Currency.swift */; };
+		44DE91D9288851C300160881 /* ConfirmTransactionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE91D8288851C300160881 /* ConfirmTransactionRouter.swift */; };
+		44DE91DB288851CC00160881 /* ConfirmTransactionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE91DA288851CC00160881 /* ConfirmTransactionPresenter.swift */; };
+		44DE91DD288851D300160881 /* ConfirmTransactionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE91DC288851D300160881 /* ConfirmTransactionInteractor.swift */; };
+		44DE91DF288851DA00160881 /* ConfirmTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE91DE288851DA00160881 /* ConfirmTransactionView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44DE919F28884CA500160881 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44DE918628884CA500160881 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44DE918D28884CA500160881;
+			remoteInfo = "currency-swiftui-viper";
+		};
+		44DE91A928884CA500160881 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44DE918628884CA500160881 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44DE918D28884CA500160881;
+			remoteInfo = "currency-swiftui-viper";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44DE918E28884CA500160881 /* currency-swiftui-viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "currency-swiftui-viper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44DE919128884CA500160881 /* currency_swiftui_viperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currency_swiftui_viperApp.swift; sourceTree = "<group>"; };
+		44DE919328884CA500160881 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		44DE919528884CA500160881 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44DE919828884CA500160881 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		44DE919E28884CA500160881 /* currency-swiftui-viperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "currency-swiftui-viperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44DE91A228884CA500160881 /* currency_swiftui_viperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currency_swiftui_viperTests.swift; sourceTree = "<group>"; };
+		44DE91A828884CA500160881 /* currency-swiftui-viperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "currency-swiftui-viperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44DE91AC28884CA500160881 /* currency_swiftui_viperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currency_swiftui_viperUITests.swift; sourceTree = "<group>"; };
+		44DE91AE28884CA500160881 /* currency_swiftui_viperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currency_swiftui_viperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		44DE91C028884E4400160881 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		44DE91C228884E6900160881 /* Persistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistable.swift; sourceTree = "<group>"; };
+		44DE91C428884F0F00160881 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		44DE91C72888500A00160881 /* DIStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIStore.swift; sourceTree = "<group>"; };
+		44DE91CA288850B100160881 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		44DE91CD288850E800160881 /* CurrencySelectionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectionRouter.swift; sourceTree = "<group>"; };
+		44DE91CF288850F800160881 /* CurrencySelectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectionPresenter.swift; sourceTree = "<group>"; };
+		44DE91D12888510500160881 /* CurrencySelectionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectionInteractor.swift; sourceTree = "<group>"; };
+		44DE91D32888517900160881 /* CurrencySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectionView.swift; sourceTree = "<group>"; };
+		44DE91D62888519500160881 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		44DE91D8288851C300160881 /* ConfirmTransactionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmTransactionRouter.swift; sourceTree = "<group>"; };
+		44DE91DA288851CC00160881 /* ConfirmTransactionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmTransactionPresenter.swift; sourceTree = "<group>"; };
+		44DE91DC288851D300160881 /* ConfirmTransactionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmTransactionInteractor.swift; sourceTree = "<group>"; };
+		44DE91DE288851DA00160881 /* ConfirmTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmTransactionView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44DE918B28884CA500160881 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44DE919B28884CA500160881 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44DE91A528884CA500160881 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44DE918528884CA500160881 = {
+			isa = PBXGroup;
+			children = (
+				44DE919028884CA500160881 /* currency-swiftui-viper */,
+				44DE91A128884CA500160881 /* currency-swiftui-viperTests */,
+				44DE91AB28884CA500160881 /* currency-swiftui-viperUITests */,
+				44DE918F28884CA500160881 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44DE918F28884CA500160881 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44DE918E28884CA500160881 /* currency-swiftui-viper.app */,
+				44DE919E28884CA500160881 /* currency-swiftui-viperTests.xctest */,
+				44DE91A828884CA500160881 /* currency-swiftui-viperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44DE919028884CA500160881 /* currency-swiftui-viper */ = {
+			isa = PBXGroup;
+			children = (
+				44DE91C92888509E00160881 /* App */,
+				44DE91C628884FF100160881 /* DI */,
+				44DE91BD28884D4C00160881 /* Data Layer */,
+				44DE91BB28884CE300160881 /* Modules */,
+				44DE91D52888518600160881 /* Entities */,
+				44DE919528884CA500160881 /* Assets.xcassets */,
+				44DE919728884CA500160881 /* Preview Content */,
+			);
+			path = "currency-swiftui-viper";
+			sourceTree = "<group>";
+		};
+		44DE919728884CA500160881 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				44DE919828884CA500160881 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		44DE91A128884CA500160881 /* currency-swiftui-viperTests */ = {
+			isa = PBXGroup;
+			children = (
+				44DE91A228884CA500160881 /* currency_swiftui_viperTests.swift */,
+			);
+			path = "currency-swiftui-viperTests";
+			sourceTree = "<group>";
+		};
+		44DE91AB28884CA500160881 /* currency-swiftui-viperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				44DE91AC28884CA500160881 /* currency_swiftui_viperUITests.swift */,
+				44DE91AE28884CA500160881 /* currency_swiftui_viperUITestsLaunchTests.swift */,
+			);
+			path = "currency-swiftui-viperUITests";
+			sourceTree = "<group>";
+		};
+		44DE91BB28884CE300160881 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				44DE91BC28884D0300160881 /* CurrencySelection */,
+				44DE91CC288850C800160881 /* ConfirmTransaction */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		44DE91BC28884D0300160881 /* CurrencySelection */ = {
+			isa = PBXGroup;
+			children = (
+				44DE91CD288850E800160881 /* CurrencySelectionRouter.swift */,
+				44DE91CF288850F800160881 /* CurrencySelectionPresenter.swift */,
+				44DE91D12888510500160881 /* CurrencySelectionInteractor.swift */,
+				44DE91D32888517900160881 /* CurrencySelectionView.swift */,
+			);
+			path = CurrencySelection;
+			sourceTree = "<group>";
+		};
+		44DE91BD28884D4C00160881 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				44DE91BF28884E1000160881 /* Persistence */,
+				44DE91BE28884E0800160881 /* Networking */,
+			);
+			path = "Data Layer";
+			sourceTree = "<group>";
+		};
+		44DE91BE28884E0800160881 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				44DE91C428884F0F00160881 /* NetworkingManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		44DE91BF28884E1000160881 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				44DE91C228884E6900160881 /* Persistable.swift */,
+				44DE91C028884E4400160881 /* PersistenceManager.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		44DE91C628884FF100160881 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				44DE91C72888500A00160881 /* DIStore.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		44DE91C92888509E00160881 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				44DE919128884CA500160881 /* currency_swiftui_viperApp.swift */,
+				44DE919328884CA500160881 /* ContentView.swift */,
+				44DE91CA288850B100160881 /* Route.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		44DE91CC288850C800160881 /* ConfirmTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				44DE91D8288851C300160881 /* ConfirmTransactionRouter.swift */,
+				44DE91DA288851CC00160881 /* ConfirmTransactionPresenter.swift */,
+				44DE91DC288851D300160881 /* ConfirmTransactionInteractor.swift */,
+				44DE91DE288851DA00160881 /* ConfirmTransactionView.swift */,
+			);
+			path = ConfirmTransaction;
+			sourceTree = "<group>";
+		};
+		44DE91D52888518600160881 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				44DE91D62888519500160881 /* Currency.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44DE918D28884CA500160881 /* currency-swiftui-viper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44DE91B228884CA500160881 /* Build configuration list for PBXNativeTarget "currency-swiftui-viper" */;
+			buildPhases = (
+				44DE918A28884CA500160881 /* Sources */,
+				44DE918B28884CA500160881 /* Frameworks */,
+				44DE918C28884CA500160881 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "currency-swiftui-viper";
+			productName = "currency-swiftui-viper";
+			productReference = 44DE918E28884CA500160881 /* currency-swiftui-viper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44DE919D28884CA500160881 /* currency-swiftui-viperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44DE91B528884CA500160881 /* Build configuration list for PBXNativeTarget "currency-swiftui-viperTests" */;
+			buildPhases = (
+				44DE919A28884CA500160881 /* Sources */,
+				44DE919B28884CA500160881 /* Frameworks */,
+				44DE919C28884CA500160881 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44DE91A028884CA500160881 /* PBXTargetDependency */,
+			);
+			name = "currency-swiftui-viperTests";
+			productName = "currency-swiftui-viperTests";
+			productReference = 44DE919E28884CA500160881 /* currency-swiftui-viperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44DE91A728884CA500160881 /* currency-swiftui-viperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44DE91B828884CA500160881 /* Build configuration list for PBXNativeTarget "currency-swiftui-viperUITests" */;
+			buildPhases = (
+				44DE91A428884CA500160881 /* Sources */,
+				44DE91A528884CA500160881 /* Frameworks */,
+				44DE91A628884CA500160881 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44DE91AA28884CA500160881 /* PBXTargetDependency */,
+			);
+			name = "currency-swiftui-viperUITests";
+			productName = "currency-swiftui-viperUITests";
+			productReference = 44DE91A828884CA500160881 /* currency-swiftui-viperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44DE918628884CA500160881 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					44DE918D28884CA500160881 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					44DE919D28884CA500160881 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 44DE918D28884CA500160881;
+					};
+					44DE91A728884CA500160881 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 44DE918D28884CA500160881;
+					};
+				};
+			};
+			buildConfigurationList = 44DE918928884CA500160881 /* Build configuration list for PBXProject "currency-swiftui-viper" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44DE918528884CA500160881;
+			productRefGroup = 44DE918F28884CA500160881 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44DE918D28884CA500160881 /* currency-swiftui-viper */,
+				44DE919D28884CA500160881 /* currency-swiftui-viperTests */,
+				44DE91A728884CA500160881 /* currency-swiftui-viperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44DE918C28884CA500160881 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44DE919928884CA500160881 /* Preview Assets.xcassets in Resources */,
+				44DE919628884CA500160881 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44DE919C28884CA500160881 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44DE91A628884CA500160881 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44DE918A28884CA500160881 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44DE91D72888519500160881 /* Currency.swift in Sources */,
+				44DE91C128884E4400160881 /* PersistenceManager.swift in Sources */,
+				44DE919428884CA500160881 /* ContentView.swift in Sources */,
+				44DE91D22888510500160881 /* CurrencySelectionInteractor.swift in Sources */,
+				44DE91CE288850E800160881 /* CurrencySelectionRouter.swift in Sources */,
+				44DE91DD288851D300160881 /* ConfirmTransactionInteractor.swift in Sources */,
+				44DE91DF288851DA00160881 /* ConfirmTransactionView.swift in Sources */,
+				44DE91C328884E6900160881 /* Persistable.swift in Sources */,
+				44DE91C528884F0F00160881 /* NetworkingManager.swift in Sources */,
+				44DE91D0288850F800160881 /* CurrencySelectionPresenter.swift in Sources */,
+				44DE91DB288851CC00160881 /* ConfirmTransactionPresenter.swift in Sources */,
+				44DE91D42888517900160881 /* CurrencySelectionView.swift in Sources */,
+				44DE91D9288851C300160881 /* ConfirmTransactionRouter.swift in Sources */,
+				44DE91C82888500A00160881 /* DIStore.swift in Sources */,
+				44DE91CB288850B100160881 /* Route.swift in Sources */,
+				44DE919228884CA500160881 /* currency_swiftui_viperApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44DE919A28884CA500160881 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44DE91A328884CA500160881 /* currency_swiftui_viperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44DE91A428884CA500160881 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44DE91AF28884CA500160881 /* currency_swiftui_viperUITestsLaunchTests.swift in Sources */,
+				44DE91AD28884CA500160881 /* currency_swiftui_viperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44DE91A028884CA500160881 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44DE918D28884CA500160881 /* currency-swiftui-viper */;
+			targetProxy = 44DE919F28884CA500160881 /* PBXContainerItemProxy */;
+		};
+		44DE91AA28884CA500160881 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44DE918D28884CA500160881 /* currency-swiftui-viper */;
+			targetProxy = 44DE91A928884CA500160881 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		44DE91B028884CA500160881 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44DE91B128884CA500160881 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44DE91B328884CA500160881 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"currency-swiftui-viper/Preview Content\"";
+				DEVELOPMENT_TEAM = X6G33JBYX9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.samidaik.currency-swiftui-viper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44DE91B428884CA500160881 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"currency-swiftui-viper/Preview Content\"";
+				DEVELOPMENT_TEAM = X6G33JBYX9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.samidaik.currency-swiftui-viper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		44DE91B628884CA500160881 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6G33JBYX9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.samidaik.currency-swiftui-viperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/currency-swiftui-viper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/currency-swiftui-viper";
+			};
+			name = Debug;
+		};
+		44DE91B728884CA500160881 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6G33JBYX9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.samidaik.currency-swiftui-viperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/currency-swiftui-viper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/currency-swiftui-viper";
+			};
+			name = Release;
+		};
+		44DE91B928884CA500160881 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6G33JBYX9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.samidaik.currency-swiftui-viperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "currency-swiftui-viper";
+			};
+			name = Debug;
+		};
+		44DE91BA28884CA500160881 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6G33JBYX9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.samidaik.currency-swiftui-viperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "currency-swiftui-viper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44DE918928884CA500160881 /* Build configuration list for PBXProject "currency-swiftui-viper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44DE91B028884CA500160881 /* Debug */,
+				44DE91B128884CA500160881 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44DE91B228884CA500160881 /* Build configuration list for PBXNativeTarget "currency-swiftui-viper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44DE91B328884CA500160881 /* Debug */,
+				44DE91B428884CA500160881 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44DE91B528884CA500160881 /* Build configuration list for PBXNativeTarget "currency-swiftui-viperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44DE91B628884CA500160881 /* Debug */,
+				44DE91B728884CA500160881 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44DE91B828884CA500160881 /* Build configuration list for PBXNativeTarget "currency-swiftui-viperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44DE91B928884CA500160881 /* Debug */,
+				44DE91BA28884CA500160881 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44DE918628884CA500160881 /* Project object */;
+}
