@@ -23,8 +23,8 @@ enum Route {
         switch self {
         case .currencySelection:
             return CurrencySelectionRouter.assemble(
-                NetworkingManager: DIStore.networkingManager,
-                persistenceManger: DIStore.persistenceManager
+                NetworkingManager: DIStore.networkingManager as! NetworkingManager,
+                persistenceManger: DIStore.persistenceManager as! PersistenceManager
             )
             
         case .confirmTranscation: return ConfirmationTransactionView()

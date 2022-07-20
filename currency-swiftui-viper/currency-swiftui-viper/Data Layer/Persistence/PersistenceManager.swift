@@ -8,12 +8,16 @@
 import Foundation
 
 public final class PersistenceManager: Persistable {
-    public func save(items: [Codable]) {
-        
+    
+    public func save(currencies: [Currency]) {
+        AppUserDefaults.shared.currencies = currencies
     }
     
-    public func fetchLocal() -> [Codable] {
-        return []
+    public func fetchCurrencies() -> [Currency] {
+        return AppUserDefaults.shared.currencies
     }
-    
+
+    public func getLatestRefreshTimeStamp() -> Date? {
+        return AppUserDefaults.shared.lastRefreshTimestamp
+    }
 }

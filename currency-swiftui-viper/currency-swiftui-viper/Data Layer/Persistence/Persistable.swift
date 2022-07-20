@@ -8,6 +8,7 @@
 import Foundation
 
 public protocol Persistable: AnyObject {
-    func save(items: [Codable])
-    func fetchLocal() -> [Codable]
+    func save(currencies: [Currency])
+    func fetchCurrencies() -> [Currency]
+    func getLatestRefreshTimeStamp() -> Date?
 }

@@ -19,6 +19,10 @@ public struct CurrencySelectionView: View {
     public var body: some View {
         NavigationView {
             VStack {
+                Picker("", selection: $selectedColor) {
+                    ForEach(presenter.currencies, id: \.self) { Text($0) }
+                }
+                
                 Text("Currency Selection")
                 
                 presenter.showConfirmation {

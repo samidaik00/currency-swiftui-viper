@@ -11,7 +11,7 @@ import SwiftUI
 public class CurrencySelectionRouter {
     static func assemble(NetworkingManager: NetworkingManager, persistenceManger: PersistenceManager) -> some View {
         let router = CurrencySelectionRouter()
-        let interactor = CurrencySelectionInteractor(networkingManager: NetworkingManager, persistenceManger: persistenceManger)
+        let interactor = CurrencySelectionInteractor(networkingManager: NetworkingManager, persistenceManager: persistenceManger)
         let presenter = CurrencySelectionPresenter(router: router, interactor: interactor)
         let view = CurrencySelectionView(presenter: presenter)
         return view

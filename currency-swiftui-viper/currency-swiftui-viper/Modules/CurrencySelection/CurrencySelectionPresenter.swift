@@ -12,13 +12,23 @@ public class CurrencySelectionPresenter: ObservableObject {
     let router: CurrencySelectionRouter
     let interactor: CurrencySelectionInteractor
     
+    @Published var currencies: [String] = []
+    @Published var selectedBaseCurrency: String
+    @Published var selectedCurrency: String
+    @Published var amount: String
+    
     init(router: CurrencySelectionRouter, interactor: CurrencySelectionInteractor) {
         self.router = router
         self.interactor = interactor
     }
     
+    @MainActor
     func onAppear() async {
-        await interactor.getExchangeRates()
+        do {
+            currencies = try await interactor.getExchangeRates().map { $0.code }
+        } catch {
+            currencies = []
+        }
     }
     
     func showConfirmation<Content: View>(@ViewBuilder content: ()-> Content) -> some View {

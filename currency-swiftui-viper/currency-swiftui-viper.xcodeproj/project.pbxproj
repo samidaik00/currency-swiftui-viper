@@ -11,6 +11,9 @@
 		4475EA5C28885FB600D1EA76 /* ExchangeRateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4475EA5B28885FB600D1EA76 /* ExchangeRateResponse.swift */; };
 		4475EA5F288861F400D1EA76 /* ExchangeRateEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4475EA5E288861F400D1EA76 /* ExchangeRateEndpoint.swift */; };
 		4475EA61288863AD00D1EA76 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4475EA60288863AD00D1EA76 /* HTTPClient.swift */; };
+		4475EA6328886ECE00D1EA76 /* AppUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4475EA6228886ECE00D1EA76 /* AppUserDefaults.swift */; };
+		4475EA65288872B200D1EA76 /* NetworkingManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4475EA64288872B200D1EA76 /* NetworkingManagerType.swift */; };
+		4475EA68288875AD00D1EA76 /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4475EA67288875AD00D1EA76 /* Date+Utils.swift */; };
 		44DE919228884CA500160881 /* currency_swiftui_viperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE919128884CA500160881 /* currency_swiftui_viperApp.swift */; };
 		44DE919428884CA500160881 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE919328884CA500160881 /* ContentView.swift */; };
 		44DE919628884CA500160881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44DE919528884CA500160881 /* Assets.xcassets */; };
@@ -56,6 +59,9 @@
 		4475EA5B28885FB600D1EA76 /* ExchangeRateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateResponse.swift; sourceTree = "<group>"; };
 		4475EA5E288861F400D1EA76 /* ExchangeRateEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateEndpoint.swift; sourceTree = "<group>"; };
 		4475EA60288863AD00D1EA76 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		4475EA6228886ECE00D1EA76 /* AppUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserDefaults.swift; sourceTree = "<group>"; };
+		4475EA64288872B200D1EA76 /* NetworkingManagerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManagerType.swift; sourceTree = "<group>"; };
+		4475EA67288875AD00D1EA76 /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
 		44DE918E28884CA500160881 /* currency-swiftui-viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "currency-swiftui-viper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44DE919128884CA500160881 /* currency_swiftui_viperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currency_swiftui_viperApp.swift; sourceTree = "<group>"; };
 		44DE919328884CA500160881 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -123,6 +129,14 @@
 			path = Endpoints;
 			sourceTree = "<group>";
 		};
+		4475EA662888759100D1EA76 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4475EA67288875AD00D1EA76 /* Date+Utils.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		44DE918528884CA500160881 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				44DE91C92888509E00160881 /* App */,
+				4475EA662888759100D1EA76 /* Extensions */,
 				44DE91C628884FF100160881 /* DI */,
 				44DE91BD28884D4C00160881 /* Data Layer */,
 				44DE91BB28884CE300160881 /* Modules */,
@@ -214,6 +229,7 @@
 		44DE91BE28884E0800160881 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				4475EA64288872B200D1EA76 /* NetworkingManagerType.swift */,
 				44DE91C428884F0F00160881 /* NetworkingManager.swift */,
 				4475EA5828885E9900D1EA76 /* EndpointType.swift */,
 				4475EA60288863AD00D1EA76 /* HTTPClient.swift */,
@@ -228,6 +244,7 @@
 			children = (
 				44DE91C228884E6900160881 /* Persistable.swift */,
 				44DE91C028884E4400160881 /* PersistenceManager.swift */,
+				4475EA6228886ECE00D1EA76 /* AppUserDefaults.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -400,11 +417,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				44DE91D72888519500160881 /* Currency.swift in Sources */,
+				4475EA65288872B200D1EA76 /* NetworkingManagerType.swift in Sources */,
 				44DE91C128884E4400160881 /* PersistenceManager.swift in Sources */,
 				44DE919428884CA500160881 /* ContentView.swift in Sources */,
 				44DE91D22888510500160881 /* CurrencySelectionInteractor.swift in Sources */,
+				4475EA6328886ECE00D1EA76 /* AppUserDefaults.swift in Sources */,
 				44DE91CE288850E800160881 /* CurrencySelectionRouter.swift in Sources */,
 				4475EA5F288861F400D1EA76 /* ExchangeRateEndpoint.swift in Sources */,
+				4475EA68288875AD00D1EA76 /* Date+Utils.swift in Sources */,
 				4475EA61288863AD00D1EA76 /* HTTPClient.swift in Sources */,
 				44DE91DD288851D300160881 /* ConfirmTransactionInteractor.swift in Sources */,
 				44DE91DF288851DA00160881 /* ConfirmTransactionView.swift in Sources */,

@@ -7,6 +7,7 @@
 
 import Foundation
 
-struct Currency: Codable {
-    
+public struct Currency: Codable {
+    let code: String
+    let exchangeRate: Double
 }
